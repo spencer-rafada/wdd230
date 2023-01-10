@@ -2,6 +2,10 @@
 
 body {
   font-family: Outfit, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 header {
@@ -23,7 +27,8 @@ header a {
   color: hsl(178, 100%, 50%);
 }
 
-header a:visited, main a:visited {
+header a:visited,
+main a:visited {
   text-decoration: none;
 }
 
@@ -65,7 +70,7 @@ main h2:hover {
 
 main a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 main a:hover {
@@ -73,7 +78,7 @@ main a:hover {
 }
 
 main li {
-  transition: transform .5s;
+  transition: transform 0.5s;
   background-color: white;
 }
 
