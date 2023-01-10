@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 body {
   font-family: Outfit, sans-serif;
 }
@@ -17,9 +18,13 @@ header img {
   border-top-left-radius: 0.5rem;
 }
 
-header a, main a {
+header a {
   text-decoration: none;
   color: hsl(178, 100%, 50%);
+}
+
+header a:visited, main a:visited {
+  text-decoration: none;
 }
 
 header h1 {
@@ -56,6 +61,11 @@ main h2 {
 
 main h2:hover {
   color: red;
+}
+
+main a {
+  text-decoration: none;
+  color: black
 }
 
 main a:hover {
