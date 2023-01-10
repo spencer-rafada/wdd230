@@ -96,6 +96,5 @@ footer p:nth-child(1) {
 }
 
 footer p:nth-child(2) {
-  color:hsl(178, 93%, 22%);
   margin: 0.5rem;
 }
