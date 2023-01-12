@@ -66,7 +66,7 @@ main h2 {
 }
 
 main h2:hover {
-  color: red;
+  color: hsl(180, 100%, 21%);
 }
 
 main a {
@@ -75,16 +75,29 @@ main a {
 }
 
 main a:hover {
-  color: red;
+  color: hsl(180, 100%, 21%);
+}
+
+main ul {
+  list-style-type: none;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 main li {
   transition: transform 0.5s;
   background-color: white;
+  text-align: center;
+  border: solid black 1px;
 }
 
 main li:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 10px 2px hsl(178, 100%, 50%);
 }
 
 footer {
