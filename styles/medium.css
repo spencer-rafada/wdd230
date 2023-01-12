@@ -1,0 +1,18 @@
+@media screen and (min-width: 32.5em) {
+  body {
+    background-color: gray;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+    margin: 1rem;
+  }
+
+  #content {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.541);
+  }
+
+  #content:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 187, 255, 0.59);
+  }
+}

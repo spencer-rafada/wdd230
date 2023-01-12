@@ -33,7 +33,7 @@ main a:visited {
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: 100;
 }
@@ -57,6 +57,7 @@ header div:nth-child(2) {
 
 main {
   padding: 1rem;
+  background-color: white;
 }
 
 main h2 {
