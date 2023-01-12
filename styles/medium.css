@@ -3,16 +3,38 @@
     background-color: gray;
   }
 
+  header {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
   header h1 {
     font-size: 3.5rem;
     margin: 1rem;
   }
 
+  main a,
+  li {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+  }
+
+  main ul {
+    padding: 1rem;
+  }
+
   #content {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.541);
+    border-radius: 1rem;
   }
 
   #content:hover {
     box-shadow: 0 0 10px 5px rgba(0, 187, 255, 0.59);
+  }
+
+  footer {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 }

@@ -12,8 +12,6 @@ header {
   display: flex;
   align-items: center;
   background-color: hsl(216, 50%, 16%);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
 header img {
@@ -50,7 +48,6 @@ header div:nth-child(2) {
 #content {
   margin: 0 auto;
   width: 800px;
-  border-radius: 1rem;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.265);
   cursor: default;
 }
@@ -69,8 +66,10 @@ main h2:hover {
   color: hsl(180, 100%, 21%);
 }
 
-main a {
+main a,
+li {
   text-decoration: none;
+  font-size: 0.5rem;
   color: black;
 }
 
@@ -103,8 +102,6 @@ main li:hover {
 footer {
   background-color: hsl(216, 50%, 16%);
   color: hsl(178, 100%, 50%);
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
   padding: 1rem;
   text-align: center;
 }
