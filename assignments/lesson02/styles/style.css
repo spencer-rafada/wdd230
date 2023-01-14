@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --main-color: #6C0E23;
+  --secondary-color: #41000e;
+  --font-color: white;
+  --light-gray: #b6b6b6;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+header {
+  background-color: var(--main-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+header h2 {
+  font-weight: 400;
+}
+
+main h3 {
+  margin: 0;
+}
+
+.container {
+  border-radius: 0.5rem;
+  border: solid black 1px;
+  background-color: var(--light-gray);
+  margin: 1rem;
+}
+
+.container>div {
+  padding: 1rem;
+}
+
+.container div:nth-child(1) {
+  background-color: var(--secondary-color);
+}
+
+.container div:nth-child(2) p:nth-child(1) {
+  margin-top: 0;
+}
+
+.container div:nth-child(2) p:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.container p {
+  color: black;
+}
+
+.container a {
+  text-decoration: none;
+  color: blue;
+}
+
+.container img {
+  width: 100%;
+  border: solid black 1.5px;
+}
