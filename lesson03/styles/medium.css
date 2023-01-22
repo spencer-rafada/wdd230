@@ -1,0 +1,53 @@
+@media screen and (min-width:321px) {
+
+  /* Header and Footer */
+
+  nav,
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Index */
+
+  .index-container {
+    display: grid;
+    grid-template-areas: "a b"
+      "c c";
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .index-container div:nth-child(1) {
+    grid-area: a;
+  }
+
+  .index-container div:nth-child(2) {
+    grid-area: b;
+  }
+
+  .index-container div:nth-child(3) {
+    grid-area: c;
+  }
+
+  /* Design */
+  .color-scheme {
+    grid-template-areas: "a b c d e";
+  }
+
+  /* Target Audience */
+  .persona {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+  }
+
+  .persona div:nth-child(1) {
+    grid-column: 1/2;
+  }
+
+  .persona div {
+    grid-column: 2/3;
+  }
+}
