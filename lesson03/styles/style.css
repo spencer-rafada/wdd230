@@ -71,7 +71,7 @@ main {
 }
 
 .index-container div:nth-child(3) img {
-  margin: 1rem;
+  width: 100%;
 }
 
 /* Design */
