@@ -31,6 +31,31 @@ header h1 {
   color: var(--fourth-color);
 }
 
+/* Hamburger Menu Staff */
+#navbar {
+  display: none;
+}
+
+#menu-open {
+  display: none;
+}
+
+#menu-close {
+  display: inline;
+}
+
+#navbar.menu-active {
+  display: flex;
+}
+
+#menu-open.menu-active {
+  display: inline;
+}
+
+#menu-close.menu-active {
+  display: none;
+}
+
 nav,
 footer {
   display: flex;

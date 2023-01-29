@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+
+@media screen and (min-width: 426px) {
+  main {
+    display: grid;
+    grid-template-areas: "a a a"
+      "d d d"
+      "f f f"
+      "e e e"
+      "b b c";
+  }
+
+  main div:nth-child(1) {
+    grid-area: a;
+  }
+
+  main div:nth-child(2) {
+    grid-area: b;
+  }
+
+  main div:nth-child(3) {
+    grid-area: c;
+  }
+
+  main div:nth-child(4) {
+    grid-area: d;
+  }
+
+  main div:nth-child(5) {
+    grid-area: e;
+  }
+
+  main div:nth-child(6) {
+    display: grid;
+    grid-area: f;
+    grid-template-areas: "s1 s2";
+  }
+
+  main div:nth-child(6) div:nth-child(1) {
+    grid-area: s1;
+  }
+
+  main div:nth-child(6) div:nth-child(2) {
+    grid-area: s2;
+  }
+
+  .footerInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footerInfo div {
+    padding-left: 1rem;
+  }
+
+  .footerInfo img {
+    width: 8rem;
+  }
+
+  .footerContainer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .classInfo {
+    display: grid;
+    grid-template-areas: "a b c"
+      "d d d";
+    font-size: 0.9rem;
+  }
+
+  .classInfo p:nth-child(1) {
+    grid-area: a;
+  }
+
+  .classInfo p:nth-child(2) {
+    grid-area: b;
+  }
+
+  .classInfo p:nth-child(3) {
+    grid-area: c;
+  }
+
+  .classInfo p:nth-child(4) {
+    grid-area: d;
+  }
+}
