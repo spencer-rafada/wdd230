@@ -26,3 +26,6 @@ document.querySelector(`#menu-open-2`).onclick = toggleMenu;
 var lastUpdated = document.lastModified;
 const lastModified = document.getElementById("lastmodified");
 lastModified.innerHTML = lastUpdated;
+
+const currentYear = document.getElementById("year-now");
+currentYear.innerHTML = today.getFullYear();
