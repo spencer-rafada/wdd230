@@ -29,3 +29,10 @@ lastModified.innerHTML = lastUpdated;
 
 const currentYear = document.getElementById("year-now");
 currentYear.innerHTML = today.getFullYear();
+
+const displayBanner = `<p class="alert">🤝🏼 Get a Quote today 🤝🏼</p>`;
+if (today.getDay() === 1 || today.getDay() === 2) {
+  document
+    .querySelector(`header`)
+    .insertAdjacentHTML(`beforebegin`, displayBanner);
+}
