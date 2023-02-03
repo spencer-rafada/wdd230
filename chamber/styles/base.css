@@ -184,6 +184,10 @@ main div:nth-child(6) div:nth-child(2) {
   grid-area: s2;
 }
 
+main div:nth-child(6) div:nth-child(3) {
+  display: none;
+}
+
 .spotlight {
   margin-bottom: 0;
 }

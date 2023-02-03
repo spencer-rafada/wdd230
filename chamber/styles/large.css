@@ -48,6 +48,27 @@
     display: none;
   }
 
+  main {
+    grid-template-areas: "b a a f"
+      "c a a f"
+      "e d d f";
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  /* Spotlight */
+  main div:nth-child(6) {
+    display: block;
+  }
+
+  main div:nth-child(6) div:nth-child(3) {
+    display: block;
+  }
+
+  .content {
+    margin: 0;
+  }
+
   .dateContainer {
     font-size: 1.2rem;
   }
