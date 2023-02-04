@@ -299,8 +299,15 @@ footer {
 
 .footerInfo h3,
 .footerInfo p,
-.footerContact p {
+.footerContact p,
+.footerContact a {
   margin: 0;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.footerInfo h3 {
+  color: var(--main-color);
 }
 
 .footerContainer img {
