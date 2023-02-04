@@ -79,9 +79,15 @@ nav {
   border-radius: 0.5rem;
 }
 
-.navSocials p {
+.navSocials a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  transition: 0.3s transform;
+}
+
+.navSocials a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* Hamburger Menu Staff */
@@ -102,6 +108,10 @@ nav {
   width: 70vw;
   text-align: center;
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.574);
+}
+
+#navbar li:hover {
+  cursor: pointer;
 }
 
 #menu-open {
@@ -159,37 +169,117 @@ nav {
 }
 
 /* Template Content */
-main {
-  padding: 1rem;
-}
-
 .content {
-  background-color: var(--secondary-color);
-  border: solid 1px var(--fourth-color);
-  padding: 1rem;
   margin-bottom: 1rem;
+  background-color: var(--secondary-color);
 }
 
-main div:nth-child(6) {
+.content h2 {
+  color: var(--white-color);
+  text-shadow: var(--white-color) 0 0 8px;
+}
+
+.spotlight {
   display: grid;
   grid-template-areas: "s1"
     "s2";
 }
 
-main div:nth-child(6) div:nth-child(1) {
+.spotlight div:nth-child(1) {
   grid-area: s1;
 }
 
-main div:nth-child(6) div:nth-child(2) {
+.spotlight div:nth-child(2) {
   grid-area: s2;
 }
 
-main div:nth-child(6) div:nth-child(3) {
+.spotlight div:nth-child(3) {
   display: none;
 }
 
-.spotlight {
+.service {
   margin-bottom: 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  color: var(--white-color);
+  bottom: 30%;
+  right: 5%;
+  font-weight: 700;
+  text-shadow: var(--fourth-color) 0 0 8px;
+}
+
+.hero img {
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero button {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0;
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  box-shadow: 0 0 3px 1px var(--fourth-color);
+  transition: 0.3s transform;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+
+.event {
+  padding: 1rem;
+  text-align: center;
+}
+
+.weather {
+  text-align: center;
+  padding: 1rem;
+}
+
+.news {
+  text-align: center;
+  padding: 1rem;
+}
+
+.join {
+  padding: 1rem;
+  text-align: center;
+}
+
+.join button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0;
+  background-color: var(--fourth-color);
+  color: var(--white-color);
+  font-weight: 700;
+  box-shadow: 0 0 3px 1px var(--fourth-color);
+  transition: 0.3s transform;
+}
+
+.join button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+
+.spotlight {
+  padding: 1rem;
+  text-align: center;
 }
 
 /* End of Template Content*/
