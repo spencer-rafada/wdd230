@@ -24,7 +24,7 @@
       <div class="navContainer">
         <div class="logoContainer">
           <a href="#">
-            <img src="./images/logo.png" alt="GSAMN logo" />
+            <img src="./images/logo.webp" alt="GSAMN logo" />
           </a>
           <div class="logoTextContainer">
             <a href="#">
@@ -60,7 +60,19 @@
       <div class="content hero">
         <h1>Welcome to GSAMN</h1>
         <button>Get a Quote Now!</button>
-        <img src="./images/hero-img.jpeg" alt="Hero Image" />
+        <!-- <img src="./images/hero-img.jpeg" alt="Hero Image" /> -->
+        <!-- HOMEWORK 6 -->
+        <picture>
+          <source
+            media="(min-width: 650px) and (max-width: 899px)"
+            srcset="./images/wdd230-org-medium.jpg"
+          />
+          <source
+            media="(min-width: 900px)"
+            srcset="./images/wdd230-org-large.jpg"
+          />
+          <img src="./images/wdd230-org-small.jpg" alt="Week 6 image" />
+        </picture>
       </div>
       <div class="content event">
         <h2>Grand Opening</h2>
@@ -73,9 +85,13 @@
           <p></p>
         </div>
         <div>
+          <div>
+            <svg></svg>
+            <p><span id="temperature">N/A</span>&deg;F</p>
+          </div>
           <h3>Partly Cloudy</h3>
-          <p>Wind Speed: 2.5 km/h</p>
-          <p>Wind Chill: N/A</p>
+          <p>Wind Speed: <span id="wind-speed">N/A</span>mph</p>
+          <p>Wind Chill: <span id="wind-chill">N/A</span>&deg;F</p>
         </div>
       </div>
       <div class="content news">
