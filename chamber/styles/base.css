@@ -133,11 +133,16 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-color);
+  z-index: 99;
 }
 
 #navbar li {
   list-style: none;
   padding-bottom: 0.5rem;
+}
+
+#navbar li a {
+  text-decoration: none;
 }
 
 #menu-open-2 {
