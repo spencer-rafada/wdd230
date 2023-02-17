@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Activity 7: Progressive Loading of Images</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- lazy loading and specify height of image -->
     <!-- it loads everything because it assumes 1px if not specified -->
-    <img loading="lazy" height="800" width="600" />
+    <h1>Lesson 7 Lazy Loading</h1>
+    <img
+      src="./images/placeholder.png"
+      data-src="./images/img1-300.jpeg"
+      alt="placeholder"
+    />
+    <img
+      src="./images/placeholder.png"
+      data-src="./images/img2-300.jpeg"
+      alt="placeholder"
+    />
+    <img
+      src="./images/placeholder.png"
+      data-src="./images/img3-300.jpeg"
+      alt="placeholder"
+    />
+    <img
+      src="./images/placeholder.png"
+      data-src="./images/img4-300.jpeg"
+      alt="placeholder"
+    />
+    <img
+      src="./images/placeholder.png"
+      data-src="./images/img5-300.jpeg"
+      alt="placeholder"
+    />
   </body>
 </html>
