@@ -290,6 +290,28 @@ nav {
 
 /* End of Template Content*/
 
+/* Start of Discover */
+.discover {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.discover img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.discoverContent {
+  padding: 1rem;
+}
+
+/* End of Discover */
+
 /* Footer */
 footer {
   background-color: var(--third-color);

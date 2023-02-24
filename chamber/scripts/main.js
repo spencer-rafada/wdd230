@@ -1,4 +1,5 @@
 const today = new Date();
+localStorage.setItem(`lastVisit`, today);
 
 const dateoptions = (options = {
   weekday: "long",
@@ -30,6 +31,7 @@ lastModified.innerHTML = lastUpdated;
 const currentYear = document.getElementById("year-now");
 currentYear.innerHTML = today.getFullYear();
 
+// Display banner
 const displayBanner = `<p class="alert">🤝🏼 Get a Quote today 🤝🏼</p>`;
 if (today.getDay() === 1 || today.getDay() === 2) {
   document
@@ -37,6 +39,20 @@ if (today.getDay() === 1 || today.getDay() === 2) {
     .insertAdjacentHTML(`beforebegin`, displayBanner);
 }
 
+// Display amount of days from last visit
+const lastVisit = new Date(localStorage.getItem(`lastVisit`));
+const daysLastVisit_time = today - lastVisit.getTime();
+const daysLastVisit = daysLastVisit_time / (1000 * 3600 * 24);
+const displayLastVisit = `<p class="alert">It's been ${daysLastVisit.toFixed(
+  0
+)} days since your last visit! Welcome back!</p>`;
+if (daysLastVisit === 0) {
+  document
+    .querySelector(`header`)
+    .insertAdjacentHTML(`beforebegin`, displayLastVisit);
+}
+
+// Show weather
 const showWeather = (temp, windspeed) => {
   const temperatureElement = document.querySelector(`#temperature`);
   const windSpeedElement = document.querySelector(`#wind-speed`);
