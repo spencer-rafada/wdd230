@@ -74,3 +74,7 @@ const showWeather = (temp, windspeed) => {
 };
 
 showWeather(5, 5);
+
+document.querySelector(`#join`).addEventListener(`click`, () => {
+  location.href = "join.html";
+});

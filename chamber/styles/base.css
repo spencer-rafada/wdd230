@@ -262,7 +262,6 @@ nav {
 
 .join {
   padding: 1rem;
-  text-align: center;
 }
 
 .join button {
@@ -361,3 +360,71 @@ footer {
 }
 
 /* End of Class Info*/
+
+/* Form */
+.join form fieldset {
+  border-radius: 1rem;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.join form fieldset legend {
+  background-color: var(--third-color);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.join form fieldset .top,
+.join form fieldset .top input {
+  display: block;
+  margin-bottom: 0.25rem;
+  width: 80%;
+}
+
+.join form fieldset .top input:required {
+  border-left: 5px solid red;
+}
+
+.join form fieldset .top input:required:valid {
+  border-left: 5px solid green;
+}
+
+.join form fieldset .top input,
+.join form fieldset select {
+  padding: 0.4rem;
+}
+
+.join form fieldset select {
+  margin-left: 0.5rem;
+}
+
+.join form fieldset .side,
+.join form fieldset .side select {
+  margin-bottom: 0.5rem;
+}
+
+.join form {
+  display: flex;
+  flex-direction: column;
+}
+
+.join form input[type=submit] {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 50%;
+  padding: 0.5rem;
+  background-color: var(--third-color);
+  border: 0;
+  border-radius: 1rem;
+}
+
+.join form input[type=submit]:hover {
+  background-color: var(--secondary-color);
+}
+
+/* End of Form */
+
+.success {
+  text-align: center;
+  color: var(--main-color);
+}

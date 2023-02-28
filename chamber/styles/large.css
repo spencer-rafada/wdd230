@@ -143,4 +143,9 @@
   .discover img {
     height: 300px;
   }
+
+  .join form {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

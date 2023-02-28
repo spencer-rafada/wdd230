@@ -59,30 +59,52 @@
       <form action="./thankyou.html" method="get">
         <fieldset>
           <legend>Join Us Now!</legend>
-          <label
-            >Enter your first name:
+          <label class="top"
+            >First Name:
             <input type="text" required name="firstName" />
           </label>
-          <label
-            >Enter your last name:
+          <label class="top"
+            >Last Name:
             <input type="text" required name="lastName" />
           </label>
-          <label
-            >Enter your business title:
+          <label class="top"
+            >Business Position Title:
             <input type="text" name="title" />
           </label>
-          <label
-            >Enter your email:
-            <input type="email" name="email" required />
+          <label class="top"
+            >Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="johndoe@gmail.com"
+              required
+            />
+          </label>
+          <label class="top">
+            Cellphone Number:
+            <input type="tel" name="tel" required />
+          </label>
+          <label class="top">
+            Business Name:
+            <input type="text" name="businessName" required />
+          </label>
+          <label class="side">
+            Membership Level:
+            <select name="membershipLevel">
+              <option value="nonprofit">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="Gold">Gold Membership</option>
+            </select>
           </label>
           <!-- Membership Level -->
-          <label
+          <label class="top"
             >Enter business description:
             <input type="textarea" name="description" />
           </label>
           <input type="hidden" name="dateTime" id="dateTime" />
-          <input type="submit" value="Submit" />
         </fieldset>
+        <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>
