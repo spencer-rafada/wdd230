@@ -1,0 +1,27 @@
+table {
+  margin: 10px auto;
+  border: thin solid black;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.278);
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: bottom;
+  color: red;
+  font-size: 0.7rem;
+  padding: 1rem;
+}
+
+tr th {
+  background-color: pink;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: solid 1px black;
+}
+
+td {
+  text-align: center;
+}
