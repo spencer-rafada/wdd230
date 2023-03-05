@@ -16,18 +16,18 @@
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/large.css" />
     <link rel="icon" href="./favicon.ico" />
-    <script src="./scripts/main.js" defer></script>
-    <title>GSAMN General Services</title>
+    <script src="./scripts/discover.js" defer></script>
+    <title>GSAMN | Discover</title>
   </head>
   <body>
     <header>
       <div class="navContainer">
         <div class="logoContainer">
-          <a href="#">
+          <a href="./index.html">
             <img src="./images/logo.webp" alt="GSAMN logo" />
           </a>
           <div class="logoTextContainer">
-            <a href="#">
+            <a href="./index.html">
               <h1>GSAMN</h1>
               <h4>General Services</h4>
             </a>
@@ -56,80 +56,13 @@
         <p><span id="date-today"></span></p>
       </div>
     </header>
-    <main class="home">
-      <div class="content hero">
-        <h1>Welcome to GSAMN</h1>
-        <button id="join">Get a Quote Now!</button>
-        <!-- <img src="./images/hero-img.jpeg" alt="Hero Image" /> -->
-        <!-- HOMEWORK 6 -->
-        <picture>
-          <source
-            media="(min-width: 650px) and (max-width: 899px)"
-            srcset="./images/wdd230-org-medium.jpg"
-          />
-          <source
-            media="(min-width: 900px)"
-            srcset="./images/wdd230-org-large.jpg"
-          />
-          <img src="./images/wdd230-org-small.jpg" alt="Week 6 image" />
-        </picture>
+    <main>
+      <div>
+        <h1>Business Directory</h1>
+        <button id="grid" type="button">Grid</button>
+        <button id="list" type="button">List</button>
       </div>
-      <div class="content event">
-        <h2>Grand Opening</h2>
-        <p>Join us on our grand opening!</p>
-      </div>
-      <div class="content weather">
-        <h2>Weather</h2>
-        <div>
-          <img />
-          <p></p>
-        </div>
-        <div>
-          <div>
-            <svg></svg>
-            <p><span id="temperature">N/A</span>&deg;F</p>
-          </div>
-          <h3>Partly Cloudy</h3>
-          <p>Wind Speed: <span id="wind-speed">N/A</span>mph</p>
-          <p>Wind Chill: <span id="wind-chill">N/A</span>&deg;F</p>
-        </div>
-      </div>
-      <div class="content news">
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit
-          mi. In id consectetur arcu, non dignissim lectus. Aenean finibus
-          aliquam semper. Sed eget porta orci, eu venenatis sapien. Praesent
-          vitae ante sit amet magna dictum vestibulum id in velit. Maecenas ac
-          finibus tellus. Mauris placerat, ligula vel dapibus euismod, libero
-          risus faucibus neque, quis venenatis dui sem ut massa. In tempor
-          tempor vehicula. Fusce congue quam sem, ut iaculis odio blandit vel.
-        </p>
-      </div>
-      <div class="content join">
-        <button>GET A QUOTE NOW!</button>
-        <p>We make maintenance affordable and give the best quality services</p>
-      </div>
-      <div class="content spotlight">
-        <div class="content service">
-          <h2>Service Name</h2>
-          <img />
-          <h5>quotation here</h5>
-          <p>info</p>
-        </div>
-        <div class="content service">
-          <h2>Service Name</h2>
-          <img />
-          <h5>quotation here</h5>
-          <p>info</p>
-        </div>
-        <div class="content service">
-          <h2>Service Name</h2>
-          <img />
-          <h5>quotation here</h5>
-          <p>info</p>
-        </div>
-      </div>
+      <div class="contacts"></div>
     </main>
     <footer>
       <div class="footerContainer">
