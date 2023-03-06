@@ -1,7 +1,76 @@
 {
   "directory": [
     {
-      
+      "name": "RJMG Snackhouse",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "KFC",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Cervantes",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "OUi Tailor Shop",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Orange Telephone",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Salone Borbor",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Eclipse Designs",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Spenz Dev",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "wucked Productions",
+      "address": "123 John Street",
+      "phone": "123 456 7890",
+      "url": "https://github.com/spencer-rafada",
+      "image": "",
+      "membershipLevel": "Gold"
     }
   ]
 }
