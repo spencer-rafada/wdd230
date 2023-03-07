@@ -144,8 +144,27 @@
     height: 300px;
   }
 
+  .join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .join form {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .join__info {
+    display: block;
+    border: solid 1px var(--main-color);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .join__info h2,
+  .join__info h3 {
+    color: var(--main-color);
   }
 }

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/large.css" />
     <link rel="icon" href="./favicon.ico" />
+    <script src="./scripts/join.js" defer></script>
     <title>GSAMN | Discover</title>
   </head>
   <body>
@@ -55,57 +56,98 @@
         <p><span id="date-today"></span></p>
       </div>
     </header>
-    <main class="join">
-      <form action="./thankyou.html" method="get">
-        <fieldset>
-          <legend>Join Us Now!</legend>
-          <label class="top"
-            >First Name:
-            <input type="text" required name="firstName" />
-          </label>
-          <label class="top"
-            >Last Name:
-            <input type="text" required name="lastName" />
-          </label>
-          <label class="top"
-            >Business Position Title:
-            <input type="text" name="title" />
-          </label>
-          <label class="top"
-            >Email:
-            <input
-              type="email"
-              name="email"
-              placeholder="johndoe@gmail.com"
-              required
-            />
-          </label>
-          <label class="top">
-            Cellphone Number:
-            <input type="tel" name="tel" required />
-          </label>
-          <label class="top">
-            Business Name:
-            <input type="text" name="businessName" required />
-          </label>
-          <label class="side">
-            Membership Level:
-            <select name="membershipLevel">
-              <option value="nonprofit">NP Membership</option>
-              <option value="bronze">Bronze Membership</option>
-              <option value="silver">Silver Membership</option>
-              <option value="Gold">Gold Membership</option>
-            </select>
-          </label>
-          <!-- Membership Level -->
-          <label class="top"
-            >Enter business description:
-            <input type="textarea" name="description" />
-          </label>
-          <input type="hidden" name="dateTime" id="dateTime" />
-        </fieldset>
-        <input type="submit" value="Submit" />
-      </form>
+    <main>
+      <div class="join">
+        <form action="./thankyou.html" method="get">
+          <fieldset>
+            <legend>Join Us Now!</legend>
+            <label class="top"
+              >First Name:
+              <input type="text" required name="firstName" />
+            </label>
+            <label class="top"
+              >Last Name:
+              <input type="text" required name="lastName" />
+            </label>
+            <label class="top"
+              >Business Position Title:
+              <input type="text" name="title" minlength="7" />
+            </label>
+            <label class="top"
+              >Email:
+              <input
+                type="email"
+                name="email"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </label>
+            <label class="top">
+              Cellphone Number:
+              <input type="tel" name="tel" required />
+            </label>
+            <label class="top">
+              Business Name:
+              <input type="text" name="businessName" required />
+            </label>
+            <label class="side">
+              Membership Level:
+              <select name="membershipLevel">
+                <option value="nonprofit">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+              </select>
+            </label>
+            <!-- Membership Level -->
+            <label class="top"
+              >Enter business description:
+              <input type="textarea" name="description" />
+            </label>
+            <input type="hidden" name="dateTime" id="dateTime" />
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="join__info">
+          <h2>Membership Options</h2>
+          <div class="join__info-membership">
+            <h3>NP Membership</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              asperiores blanditiis eius numquam ipsam veritatis dolorem,
+              deleniti laborum! Dolorum ipsam ipsum similique asperiores modi
+              iusto distinctio dolor fuga consectetur quam.
+            </p>
+          </div>
+          <div class="join__info-membership">
+            <h3>Bronze Membership</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              asperiores blanditiis eius numquam ipsam veritatis dolorem,
+              deleniti laborum! Dolorum ipsam ipsum similique asperiores modi
+              iusto distinctio dolor fuga consectetur quam.
+            </p>
+          </div>
+          <div class="join__info-membership">
+            <h3>Silver Membership</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              asperiores blanditiis eius numquam ipsam veritatis dolorem,
+              deleniti laborum! Dolorum ipsam ipsum similique asperiores modi
+              iusto distinctio dolor fuga consectetur quam.
+            </p>
+          </div>
+          <div class="join__info-membership">
+            <h3>Gold Membership</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              asperiores blanditiis eius numquam ipsam veritatis dolorem,
+              deleniti laborum! Dolorum ipsam ipsum similique asperiores modi
+              iusto distinctio dolor fuga consectetur quam.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footerContainer">

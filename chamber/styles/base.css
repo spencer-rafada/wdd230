@@ -264,6 +264,10 @@ nav {
   padding: 1rem;
 }
 
+.join__info {
+  display: none;
+}
+
 .join button {
   width: 100%;
   padding: 1rem;
