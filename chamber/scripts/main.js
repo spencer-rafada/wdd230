@@ -43,14 +43,15 @@ if (today.getDay() === 1 || today.getDay() === 2) {
 const lastVisit = new Date(localStorage.getItem(`lastVisit`));
 const daysLastVisit_time = today - lastVisit.getTime();
 const daysLastVisit = daysLastVisit_time / (1000 * 3600 * 24);
-const displayLastVisit = `<p class="alert">It's been ${daysLastVisit.toFixed(
-  0
-)} days since your last visit! Welcome back!</p>`;
-if (daysLastVisit === 0) {
-  document
-    .querySelector(`header`)
-    .insertAdjacentHTML(`beforebegin`, displayLastVisit);
-}
+const displayLastVisit =
+  daysLastVisit > 0
+    ? `<p class="alert">Welcome back!</p>`
+    : `<p class="alert">It's been ${daysLastVisit.toFixed(
+        0
+      )} days since your last visit! Welcome back!</p>`;
+document
+  .querySelector(`header`)
+  .insertAdjacentHTML(`beforebegin`, displayLastVisit);
 
 // Show weather
 const showWeather = (temp, windspeed) => {
