@@ -69,13 +69,42 @@ const showWeather = (temp, windspeed) => {
     );
   }
 
-  temperatureElement.innerHTML = temp;
+  temperatureElement.innerHTML = `<strong>${temp} &deg;F</strong>`;
   windSpeedElement.innerHTML = windspeed;
   windChillElement.innerHTML = chill;
 };
 
-showWeather(5, 5);
-
 document.querySelector(`#join`).addEventListener(`click`, () => {
   location.href = "join.html";
 });
+
+// Weather Script
+const weatherIcon = document.querySelector(`#weather-icon`);
+const weather = document.querySelector(`#weather`);
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Tarlac&appid=a665d48ca80d44656de93287ab204a25&units=imperial
+`;
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // this is for testing the call
+      showWeather(data.main.temp, data.wind.speed);
+      displayResults(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+const displayResults = (weatherData) => {
+  weather.innerHTML = `<strong>${weatherData.weather[0].description}</strong>`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
+  weatherIcon.alt = weatherData.weather[0].description;
+  // captionDesc.textContent = weatherData.weather[0].description;
+};
+
+apiFetch();
