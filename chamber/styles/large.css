@@ -156,13 +156,6 @@
     margin: 0 auto;
   }
 
-  .join__info {
-    display: block;
-    border: solid 1px var(--main-color);
-    padding: 1rem;
-    border-radius: 1rem;
-  }
-
   .join__info h2,
   .join__info h3 {
     color: var(--main-color);

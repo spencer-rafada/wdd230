@@ -265,7 +265,11 @@ nav {
 }
 
 .join__info {
-  display: none;
+  display: block;
+  border: solid 1px var(--main-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 .join button {
