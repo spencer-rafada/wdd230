@@ -2,26 +2,26 @@
   "directory": [
     {
       "name": "RJMG Snackhouse",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "8 Zafiro St, Tarlac City, Central Luzon",
+      "phone": "+63 917 514 7488",
       "url": "https://github.com/spencer-rafada",
-      "image": "./images/logo.webp",
+      "image": "./images/rjmg.png",
       "membershipLevel": "Silver",
       "info": "Yummy Food!"
     },
     {
       "name": "KFC",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "Cut Cut, P. Burgos Street, Corner F. Tañedo St, Tarlac City, 2300 Tarlac, Philippines",
+      "phone": "+63459826764",
       "url": "https://github.com/spencer-rafada",
-      "image": "./images/logo.webp",
+      "image": "./images/kfc.jpeg",
       "membershipLevel": "Gold",
       "info": "Kentucky Fried Chicken!"
     },
     {
       "name": "Cervantes",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "F. Tañedo St, Tarlac City, Tarlac, Philippines",
+      "phone": "+63459822124",
       "url": "https://github.com/spencer-rafada",
       "image": "./images/logo.webp",
       "membershipLevel": "Bronze",
@@ -29,34 +29,34 @@
     },
     {
       "name": "OUi Tailor Shop",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "FHQR+H2C, F. Tañedo St, Tarlac City, Tarlac, Philippines",
+      "phone": "+63459820183",
       "url": "https://github.com/spencer-rafada",
-      "image": "./images/logo.webp",
+      "image": "./images/oui.png",
       "membershipLevel": "Silver",
       "info": "Best Tailoring in Town!"
     },
     {
       "name": "Orange Telephone",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "CQX8+G26, 25 regent rd, Hill Station, Freetown, Sierra Leone",
+      "phone": "+23276450129",
       "url": "https://github.com/spencer-rafada",
-      "image": "./images/logo.webp",
+      "image": "./images/orange.png",
       "membershipLevel": "Silver",
       "info": "Sierra Leone's Number One Phone Services!"
     },
     {
       "name": "Salone Borbor",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "Freetown, Sierra Leone",
+      "phone": "232 123 1234",
       "url": "https://github.com/spencer-rafada",
-      "image": "./images/logo.webp",
+      "image": "./images/sl.webp",
       "membershipLevel": "Gold",
-      "info": "Krio is lie!"
+      "info": "Krio is life!"
     },
     {
       "name": "Eclipse Designs",
-      "address": "123 John Street",
+      "address": "Tarlac City, Tarlac, Philippines",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
       "image": "./images/logo.webp",
@@ -65,8 +65,8 @@
     },
     {
       "name": "Spenz Dev",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "345 S 2nd W, Rexburg, ID",
+      "phone": "323 274 9001",
       "url": "https://github.com/spencer-rafada",
       "image": "./images/logo.webp",
       "membershipLevel": "Bronze",
@@ -74,8 +74,8 @@
     },
     {
       "name": "wucked Productions",
-      "address": "123 John Street",
-      "phone": "123 456 7890",
+      "address": "P. Burgos St, Tarlac City, Tarlac, Philippines",
+      "phone": "+639175143409",
       "url": "https://github.com/spencer-rafada",
       "image": "./images/logo.webp",
       "membershipLevel": "Gold",

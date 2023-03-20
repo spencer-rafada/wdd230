@@ -12,6 +12,10 @@ body {
   font-family: Manrope, sans-serif;
 }
 
+main {
+  margin-bottom: 2rem;
+}
+
 .alert {
   text-align: center;
   padding: 1.2rem;
@@ -390,6 +394,10 @@ footer {
 /* End of Class Info*/
 
 /* Form */
+.joinPage {
+  margin-bottom: 2rem;
+}
+
 .joinPage form fieldset {
   border-radius: 1rem;
   border: 1px solid var(--main-color);
