@@ -48,18 +48,10 @@
   .spotlight {
     display: grid;
     grid-area: f;
-    grid-template-areas: "s1 s2";
+    grid-template-areas: repeat(2, 1fr);
   }
 
-  .spotlight div:nth-child(1) {
-    grid-area: s1;
-  }
-
-  .spotlight div:nth-child(2) {
-    grid-area: s2;
-  }
-
-  .footerInfo {
+  .spotlight .footerInfo {
     display: flex;
     align-items: center;
   }
