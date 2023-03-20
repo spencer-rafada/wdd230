@@ -78,6 +78,10 @@ document.querySelector(`#join`).addEventListener(`click`, () => {
   location.href = "join.html";
 });
 
+document.querySelector(`#join2`).addEventListener(`click`, () => {
+  location.href = "join.html";
+});
+
 // Weather Script
 const weatherIcon = document.querySelector(`#weather-icon`);
 const weather = document.querySelector(`#weather`);
@@ -108,3 +112,35 @@ const displayResults = (weatherData) => {
 };
 
 apiFetch();
+
+// Spotlight
+const getData = async () => {
+  const response = await fetch("./data/data.json");
+  const data = await response.json();
+  return data;
+};
+
+const displaySpotlight = (list) => {
+  const spotlightElement = document.querySelector(`.spotlight`);
+  spotlightElement.innerHTML = "<h2>Spotlight</h2>";
+  list.forEach((item) => {
+    const card = document.createElement(`div`);
+    card.setAttribute(`class`, `content service`);
+    card.innerHTML = `
+      <h2>${item.name}</h2>
+      <img src="${item.image}" alt="Portrait of ${item.name}"/>
+      <p>${item.info}</p>
+    `;
+    spotlightElement.appendChild(card);
+  });
+};
+
+window.addEventListener(`load`, async () => {
+  const spotlight = await getData();
+  console.log(spotlight);
+  const filteredList = spotlight.directory.filter(
+    (item) => item.membershipLevel === "Gold"
+  );
+  console.log(filteredList);
+  displaySpotlight(filteredList);
+});

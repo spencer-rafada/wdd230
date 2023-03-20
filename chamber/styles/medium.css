@@ -110,8 +110,26 @@
     box-shadow: 0 0 15px var(--main-color);
   }
 
-  .join form {
+  .joinPage form {
     width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 650px) {
+
+  /* Directory */
+  .gridDirectory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* List */
+  .listDirectory {
+    width: 80%;
     margin: 0 auto;
   }
 }

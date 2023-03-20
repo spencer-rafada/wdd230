@@ -5,72 +5,81 @@
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Silver"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Silver",
+      "info": "Yummy Food!"
     },
     {
       "name": "KFC",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Gold"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Gold",
+      "info": "Kentucky Fried Chicken!"
     },
     {
       "name": "Cervantes",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Bronze"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Bronze",
+      "info": "School Materials for Cheap!"
     },
     {
       "name": "OUi Tailor Shop",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Silver"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Silver",
+      "info": "Best Tailoring in Town!"
     },
     {
       "name": "Orange Telephone",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Silver"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Silver",
+      "info": "Sierra Leone's Number One Phone Services!"
     },
     {
       "name": "Salone Borbor",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Gold"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Gold",
+      "info": "Krio is lie!"
     },
     {
       "name": "Eclipse Designs",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Gold"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Gold",
+      "info": "Filipino Designer at your service!"
     },
     {
       "name": "Spenz Dev",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Bronze"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Bronze",
+      "info": "Programming as a Passion!"
     },
     {
       "name": "wucked Productions",
       "address": "123 John Street",
       "phone": "123 456 7890",
       "url": "https://github.com/spencer-rafada",
-      "image": "",
-      "membershipLevel": "Gold"
+      "image": "./images/logo.webp",
+      "membershipLevel": "Gold",
+      "info": "Gaming Videos"
     }
   ]
 }
