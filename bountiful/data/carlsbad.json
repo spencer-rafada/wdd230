@@ -1,0 +1,13 @@
+{
+  "name": "Carlsbad",
+  "state": "California",
+  "mayor": "Keith Blackburn",
+  "county": "San Diego",
+  "zip_codes": [92008, 92009, 92010, 92011, 92018],
+  "area_codes": [442, 760],
+  "location": {
+    "long": 33.1581,
+    "lat": 117.3506
+  },
+  "population": 115302
+}

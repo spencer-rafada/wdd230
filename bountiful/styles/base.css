@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Delicious+Handrawn&display=swap');
+
+:root {
+  --pink: #FFB5C2;
+  --yellow: #F8FA90;
+  --green: #306B34;
+  --light-blue: #00FFF5;
+  --red: #FF2E00;
+}
+
+body {
+  font-family: Comfortaa, 'sans-serif';
+  font-weight: 400;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px black;
+  margin-bottom: 1rem;
+}
+
+.navHeader__logo {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navHeader__logo a,
+.navHeader__logo a:active,
+.navHeader__logo a:visited {
+  text-decoration: none;
+  font-family: Delicious Handrawn, 'sans-serif';
+  color: var(--green);
+  font-size: 3rem;
+}
+
+.navHeader__logo button {
+  border: none;
+  background-color: white;
+  font-size: 3rem;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.navHeader__links {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20%);
+  background-color: var(--green);
+  width: 100vw;
+}
+
+.navHeader__links a,
+.navHeader__links a:visited,
+.navHeader__links a:active {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+/* End of NavBar */
+
+/* Hero Section */
+.heroSectionContainer {
+  position: relative;
+}
+
+.heroSection__img {
+  padding: 1rem;
+  border: 5px solid var(--green);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.heroSectionContainer img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.heroSection__info {
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  text-align: center;
+}
+
+.heroSection__info h1 {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.heroSection__info h3 {
+  font-weight: 300;
+}
+
+.heroSection__info #drinks-made {
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.heroSection__info button {
+  background-color: var(--yellow);
+  border: none;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+/* End of Hero Section */
+
+/* Different Options */
+.diffOptionsContainer {
+  background-color: var(--yellow);
+}
+
+.diffOptionsContainer h2 {
+  margin: 0;
+}
+
+/* End of Different Options */
+
+/* Coastal Information */
+.coastalInformation {
+  padding: 1rem;
+  border: 5px solid var(--pink);
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.coastalInformation__img img {
+  width: 100%;
+}
+
+/* .coastalInformation__info h3,
+.coastalInformation__info h4,
+.coastalInformation__info p {
+  margin: 0;
+} */
+
+/* End of Coastal Information */
