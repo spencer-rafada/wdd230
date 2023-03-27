@@ -1,0 +1,14 @@
+{
+  "strawberry": {
+    "name": "Strawberry",
+    "image": "./images/strawberry_shake.png"
+  },
+  "mango": {
+    "name": "Mango",
+    "image": "./images/mango_shake.png"
+  },
+  "watermelon": {
+    "name": "Watermelon",
+    "image": "./images/watermelon_shake.png"
+  }
+}

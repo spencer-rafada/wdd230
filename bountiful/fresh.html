@@ -30,5 +30,37 @@
         <a href="./fresh.html">Fresh</a>
       </div>
     </header>
+    <main>
+      <section class="freshFormContainer">
+        <h2>Build your Drink!</h2>
+        <div class="freshForm">
+          <form id="freshForm" action="confirmation.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" required name="firstName" id="firstName" />
+            <label for="email">Email:</label>
+            <input type="email" required name="email" id="email" />
+            <label for="phone">Phone Number:</label>
+            <input type="tel" required name="phone" id="phone" />
+            <label for="flavor">Flavor:</label>
+            <select id="flavor" name="flavor">
+              <option value="strawberry">Strawberry</option>
+              <option value="mango">Mango</option>
+              <option value="watermelon">Watermelon</option>
+            </select>
+            <label for="instructions">Additional Instructions:</label>
+            <textarea id="instructions" name="instructions"></textarea>
+            <input type="hidden" name="dateOrdered" id="dateOrdered" />
+            <button type="submit" id="formSubmit">Submit</button>
+          </form>
+        </div>
+        <div class="fruitFormSelect">
+          <img
+            id="fruitFormImg"
+            src="./images/strawberry_shake.png"
+            alt="Portrait of Selected Fruit Shake"
+          />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

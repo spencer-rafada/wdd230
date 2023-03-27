@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Delicious+Handrawn&display=swap');
+
+@media screen and (min-width: 600px) {
+  :root {
+    --pink: #FFB5C2;
+    --yellow: #F8FA90;
+    --green: #306B34;
+    --light-blue: #00FFF5;
+    --red: #FF2E00;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #navHeader__hamburger-closed {
+    display: none;
+  }
+
+  .navHeader__logo {
+    justify-content: left;
+  }
+
+  .navHeader__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    transform: translateY(0%);
+    background-color: white;
+  }
+
+  .navHeader__links a,
+  .navHeader__links a:visited,
+  .navHeader__links a:active {
+    color: var(--green);
+    padding-right: 0.5rem;
+  }
+
+  .heroSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .heroSection__img {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    grid-column: 2/3;
+  }
+
+  .heroSection__img img {
+    border-radius: 300rem;
+    width: 80%;
+    transform: rotate(11deg) translateX(10%);
+  }
+
+  .heroSection__img img:hover {
+    transform: rotate(-5deg) translateX(10%);
+  }
+
+  .heroSection__info {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 80%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .heroSection__info button {
+    cursor: pointer;
+  }
+
+  .heroSection__info button:hover {
+    background-color: var(--pink);
+  }
+
+  .heroSection__info #drinks-made {
+    color: var(--pink);
+  }
+
+  .coastalInformation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    margin-top: 3rem;
+  }
+
+  .coastalInformation__img {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .coastalInformation__img img {
+    object-fit: cover;
+    width: 70%;
+  }
+
+  .coastalInformation__info {
+    grid-column: 2/3;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .coastalInformation__info h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .coastalInformation__info h4 {
+    margin-top: 0;
+  }
+
+  .diffOptions {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .fruitOption span {
+    font-size: 8rem;
+  }
+
+  .freshFormContainer {
+    display: grid;
+  }
+
+  #freshForm {
+    margin-bottom: 0;
+  }
+}
