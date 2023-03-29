@@ -17,6 +17,10 @@ section {
   margin-bottom: 2rem;
 }
 
+main {
+  margin-bottom: 5rem;
+}
+
 button,
 a {
   cursor: pointer;
@@ -82,6 +86,7 @@ header {
 footer {
   text-align: center;
   background-color: var(--green);
+  color: white;
   padding: 2rem 0;
 }
 
@@ -149,6 +154,9 @@ footer {
 
 .diffOptionsHeader h2 {
   text-align: center;
+  font-family: Delicious Handrawn, sans-serif;
+  font-size: 2.5rem;
+  color: var(--green);
 }
 
 .diffOptions {
@@ -179,6 +187,10 @@ footer {
 
 .coastalInformation__img img {
   width: 100%;
+}
+
+.coastalInformation__info h3 {
+  color: var(--green);
 }
 
 /* .coastalInformation__info h3,
@@ -282,3 +294,118 @@ footer {
 }
 
 /* End of Confirmation */
+
+/* Links */
+.socialAccountContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socialAccountContainer a img {
+  background-color: var(--green);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.socialAccountContainer a img:hover {
+  background-color: var(--yellow);
+}
+
+.socialAccounts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* End of Links */
+
+.weatherSocialContainer h2 {
+  font-family: Delicious Handrawn, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--green);
+}
+
+/* Weather */
+.weatherContainer {
+  padding: 1.5rem;
+}
+
+.weatherListContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.weather {
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 10px var(--pink);
+  border-radius: 1rem;
+}
+
+.weatherImg img {
+  width: 100%;
+}
+
+.weatherInfo #weatherDesc {
+  text-transform: capitalize;
+}
+
+.weatherInfo {
+  width: 250px;
+}
+
+.weather p {
+  margin: 0;
+  text-align: center;
+}
+
+/* End of Weather*/
+
+.aboutUsContainer {
+  padding: 3rem;
+}
+
+.aboutUsContainer h1 {
+  text-align: center;
+  font-family: Delicious Handrawn, sans-serif;
+  font-size: 3rem;
+  color: var(--green);
+  margin: 0;
+}
+
+.aboutUsContainer p {
+  text-align: center;
+}
+
+.mapContactContainer {
+  padding: 3rem;
+  padding-top: 0;
+}
+
+.mapContactContainer h2 {
+  font-family: Delicious Handrawn, sans-serif;
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-top: 0;
+  text-align: center;
+}
+
+.mapContainer img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.contactContainer {
+  text-align: center;
+}

@@ -19,7 +19,7 @@ const callback = (items, observer) => {
 
 // Set up options
 const options = {
-  threshold: 0.1,
+  threshold: 3,
 };
 
 // observer
