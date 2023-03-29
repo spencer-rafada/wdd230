@@ -142,4 +142,33 @@
   #freshForm {
     margin-bottom: 0;
   }
+
+  /* Confirmation */
+  .confirmationContainer img {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .confirmation__orderDetails,
+  .confirmation__drinkDetails {
+    margin: 0;
+    position: absolute;
+    z-index: 20;
+    background-color: white;
+  }
+
+  .confirmation__orderDetails {
+    text-align: right;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .confirmation__drinkDetails {
+    text-align: left;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
 }

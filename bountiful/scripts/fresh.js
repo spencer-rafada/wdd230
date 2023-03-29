@@ -8,11 +8,10 @@ document.querySelector(`#dateOrdered`).value = date;
 document.querySelector(`#freshForm`).addEventListener(`submit`, () => {
   let submittedDrinks = !localStorage.getItem(`drinksSubmitted`)
     ? 0
-    : localStorage.getItem(`drinksSubmitted`);
+    : Number(localStorage.getItem(`drinksSubmitted`));
 
-  submittedDrinks += 1;
-
-  localStorage.setItem(`drinksSubmitted`, submittedDrinks);
+  console.log(typeof submittedDrinks);
+  localStorage.setItem(`drinksSubmitted`, submittedDrinks + 1);
 });
 
 const getData = async () => {

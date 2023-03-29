@@ -17,6 +17,11 @@ section {
   margin-bottom: 2rem;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 /* Navbar */
 header {
   display: flex;
@@ -72,6 +77,15 @@ header {
 }
 
 /* End of NavBar */
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--green);
+  padding: 2rem 0;
+}
+
+/* End of Footer*/
 
 /* Hero Section */
 .heroSectionContainer {
@@ -235,3 +249,36 @@ header {
 }
 
 /* End of Fresh */
+
+/* Confirmation */
+.confirmationContainer img {
+  display: none;
+}
+
+
+.confirmation__orderDetails,
+.confirmation__drinkDetails {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.confirmation__orderDetails {
+  border: 5px solid var(--pink);
+}
+
+.confirmation__drinkDetails {
+  border: 5px solid var(--yellow);
+}
+
+.confirmation__drinkDetails span,
+.confirmation__orderDetails span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.confirmation__orderDetails #email {
+  text-transform: none;
+}
+
+/* End of Confirmation */

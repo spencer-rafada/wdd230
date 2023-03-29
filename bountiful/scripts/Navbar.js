@@ -11,5 +11,7 @@ export default class Navbar {
         document.querySelector(`.navHeader__links`).style.display = "none";
       }
     });
+
+    document.querySelector(`#lastModified`).innerHTML = document.lastModified;
   }
 }
