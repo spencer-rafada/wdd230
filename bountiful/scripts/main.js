@@ -16,11 +16,12 @@ const getData = async () => {
   const response = await fetch("./data/carlsbad.json");
   const data = await response.json();
   try {
-    const weather_uri = `https://api.openweathermap.org/data/2.5/forecast?lat=${data.location.lat}&lon=${data.location.long}&appid=a665d48ca80d44656de93287ab204a25&units=imperial`;
+    const weather_uri = `https://api.openweathermap.org/data/2.5/forecast?lat=${data.location.lat}&lon=${data.location.long}&appid=a665d48ca80d44656de93287ab204a25&units=imperial&exclude=hourly`;
     const weatherResponse = await fetch(weather_uri);
     const weatherData = await weatherResponse.json();
+    console.log(weatherData);
     const filteredList = weatherData.list.filter((value, index) => {
-      return index % 8 === 0;
+      return index % 8 === 0 && index < 24;
     });
     renderWeatherInformation(filteredList);
   } catch (error) {
