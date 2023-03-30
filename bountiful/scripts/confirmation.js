@@ -8,7 +8,6 @@ const params = url.searchParams;
 params.forEach((item) => console.log(item));
 
 const getData = async (flavor) => {
-  // TODO: ask TA about this
   try {
     const response = await fetch("./data/fruityvice.json");
     const data = await response.json();
@@ -19,12 +18,24 @@ const getData = async (flavor) => {
 };
 
 const renderDrinkDetails = (drink) => {
+  let sumCarbs = 0;
+  let sumProtein = 0;
+  let sumFat = 0;
+  let sumSugar = 0;
+  let sumCal = 0;
+  drink.forEach((item) => {
+    sumCarbs += item.nutritions.carbohydrates;
+    sumProtein += item.nutritions.protein;
+    sumFat += item.nutritions.fat;
+    sumSugar += item.nutritions.sugar;
+    sumCal += item.nutritions.calories;
+  });
   return `
-  <p>Carbohydrates: <span>${drink.nutritions.carbohydrates}</span></p>
-  <p>Protein: <span>${drink.nutritions.protein}</span></p>
-  <p>Fat: <span>${drink.nutritions.fat}</span></p>
-  <p>Sugar: <span>${drink.nutritions.sugar}</span></p>
-  <p>Calories: <span>${drink.nutritions.calories}</span></p>
+  <p>Carbohydrates: <span>${sumCarbs}</span></p>
+  <p>Protein: <span>${sumProtein.toFixed(2)}</span></p>
+  <p>Fat: <span>${sumFat.toFixed(2)}</span></p>
+  <p>Sugar: <span>${sumSugar.toFixed(2)}</span></p>
+  <p>Calories: <span>${sumCal.toFixed(2)}</span></p>
   `;
 };
 
@@ -40,7 +51,9 @@ const renderOrderDetails = (params) => {
   <p>Order For: <span>${params.get(`firstName`)}</span></p>
   <p>Email: <span id="email">${params.get(`email`)}</span></p>
   <p>Phone: <span>${params.get(`phone`)}</span></p>
-  <p>Flavor: <span>${params.get(`flavor`)}</span></p>
+  <p>Drink: <span>${params.get(`flavor1`)}-${params.get(
+    `flavor2`
+  )}-${params.get(`flavor3`)}</span></p>
   <p>Special Instructions: <span>${params.get(`instructions`)}</span></p>
   <p>Order Date: <span>${date.toLocaleTimeString(
     "en-us",
@@ -48,21 +61,42 @@ const renderOrderDetails = (params) => {
   )}</span></p>`;
 };
 
-const renderImage = (flavor, element) => {
-  if (flavor === "strawberry") {
-    element.src = "./images/strawberry_shake.png";
-  } else if (flavor === "mango") {
-    element.src = "./images/mango_shake.png";
-  } else if (flavor === "watermelon") {
-    element.src = "./images/watermelon_shake.png";
-  }
-};
+const drinkData1 = await getData(params.get(`flavor1`));
+const drinkData2 = await getData(params.get(`flavor2`));
+const drinkData3 = await getData(params.get(`flavor3`));
 
-const drinkData = await getData(params.get(`flavor`));
-const drinkImg = document.querySelector(`#confirmationDrinkImage`);
+const drinkData = [...drinkData1, ...drinkData2, ...drinkData3];
 
-renderImage(params.get(`flavor`), drinkImg);
 document.querySelector(`.confirmation__orderDetails`).innerHTML =
   renderOrderDetails(params);
 document.querySelector(`.confirmation__drinkDetails`).innerHTML =
-  renderDrinkDetails(drinkData[0]);
+  renderDrinkDetails(drinkData);
+
+// Lazy Loading
+let imagesToLoad = document.querySelectorAll(`img[data-src]`);
+
+const loadImages = (img) => {
+  img.setAttribute("src", img.getAttribute("data-src"));
+  img.onload = () => {
+    img.removeAttribute("data-src");
+  };
+};
+
+const callback = (items, observer) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      loadImages(item.target);
+      observer.unobserve(item.target);
+    }
+  });
+};
+
+const options = {
+  threshold: 0.1,
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+imagesToLoad.forEach((img) => {
+  observer.observe(img);
+});

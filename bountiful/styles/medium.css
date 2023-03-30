@@ -81,7 +81,7 @@
   }
 
   .heroSection__info button:hover {
-    background-color: var(--pink);
+    background-color: var(--yellow);
   }
 
   .heroSection__info #drinks-made {
@@ -170,20 +170,6 @@
     top: 70%;
     left: 70%;
     transform: translate(-50%, -50%);
-  }
-
-  .weatherSocialContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .weatherContainer {
-    grid-column: 1/2;
-    width: 50vw;
-  }
-
-  .socialAccountContainer {
-    grid-column: 2/3;
   }
 
   .aboutUsContainer {
